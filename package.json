@@ -1,0 +1,23 @@
+{
+  "name": "@radial-color-picker/color-wheel",
+  "version": "0.1.0",
+  "description": "Color Wheel",
+  "main": "dist/color-wheel.cjs.js",
+  "module": "dist/color-wheel.esm.js",
+  "browser": "dist/color-wheel.umd.js",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^0.57.1",
+    "rollup-plugin-butternut": "^0.1.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": "git@github.com:radial-color-picker/color-wheel.git",
+  "author": "Rosen Kanev <rkunev@gmail.com>",
+  "license": "MIT"
+}

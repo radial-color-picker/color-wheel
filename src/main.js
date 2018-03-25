@@ -9,7 +9,7 @@
  * @param   {Number}            size   Color wheel radius in pixels
  * @returns {HTMLCanvasElement} canvas The passed canvas for easier chaining
  */
-function paintColorWheelToCanvas(canvas, size) {
+export default function paintColorWheelToCanvas(canvas, size) {
     const half = size / 2;
     const radius = Math.sqrt(2) * half;
     const deg = Math.PI / 180;
