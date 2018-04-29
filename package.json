@@ -1,6 +1,6 @@
 {
   "name": "@radial-color-picker/color-wheel",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Color Wheel",
   "main": "dist/color-wheel.cjs.js",
   "module": "dist/color-wheel.esm.js",
