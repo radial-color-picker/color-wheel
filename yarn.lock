@@ -1097,7 +1097,7 @@ resolve@^1.3.2:
   dependencies:
     path-parse "^1.0.5"
 
-rollup-plugin-babel-minify@^6.1.0:
+rollup-plugin-babel-minify@6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-babel-minify/-/rollup-plugin-babel-minify-6.1.0.tgz#076e54d0d4682a9c8ba51f22fe0c2ec416190333"
   dependencies:
