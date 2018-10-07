@@ -7,10 +7,10 @@
   "browser": "dist/color-wheel.umd.js",
   "dependencies": {},
   "devDependencies": {
-    "babel-core": "6.26.3",
-    "babel-preset-env": "1.6.1",
+    "@babel/core": "7.1.2",
+    "@babel/preset-env": "7.1.0",
     "rollup": "0.63.4",
-    "rollup-plugin-babel": "3.0.7",
+    "rollup-plugin-babel": "4.0.3",
     "rollup-plugin-butternut": "0.1.0"
   },
   "scripts": {
