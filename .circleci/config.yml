@@ -22,5 +22,5 @@ jobs:
       - save_cache:
           key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
-            - ~/.cache  ## cache both yarn and Cypress!
+            - node_modules
       - run: yarn run ci
