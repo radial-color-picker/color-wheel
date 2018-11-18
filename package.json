@@ -21,7 +21,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "prepublishOnly": "rollup -c",
-    "test": "jest"
+    "test": "jest",
+    "ci": "jest -i --ci -b"
   },
   "files": [
     "dist"
