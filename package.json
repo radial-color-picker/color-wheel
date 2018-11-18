@@ -13,6 +13,7 @@
     "babel-jest": "23.6.0",
     "canvas": "2.1.0",
     "jest": "23.6.0",
+    "prettier": "1.15.2",
     "rollup": "0.67.3",
     "rollup-plugin-babel": "4.0.3",
     "rollup-plugin-babel-minify": "6.1.1"
@@ -20,6 +21,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
+    "lint": "prettier --write \"**/*.js\"",
     "prepublishOnly": "rollup -c",
     "test": "jest",
     "ci": "jest -i --ci -b"

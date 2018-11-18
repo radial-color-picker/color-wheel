@@ -19,7 +19,7 @@ export default [
             babel({
                 exclude: ['node_modules/**'],
             }),
-        ]
+        ],
     },
     {
         input: 'src/main.js',
@@ -30,15 +30,15 @@ export default [
             }),
             minify({
                 comments: false,
-                bannerNewLine: true
-            })
-        ]
+                bannerNewLine: true,
+            }),
+        ],
     },
     {
         input: 'src/main.js',
         output: [
             { file: pkg.main, format: 'cjs', banner },
-            { file: pkg.module, format: 'es', banner }
-        ]
-    }
+            { file: pkg.module, format: 'es', banner },
+        ],
+    },
 ];

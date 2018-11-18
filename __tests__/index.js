@@ -41,6 +41,6 @@ describe('draws canvas correctly', () => {
         expect(g).toBe(213);
         expect(b).toBe(0);
     });
-})
+});
 
 const getColor = (canvas, x, y) => canvas.getContext('2d').getImageData(x, y, 1, 1).data;
