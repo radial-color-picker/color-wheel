@@ -10,6 +10,9 @@
     <a href="https://www.npmjs.com/package/@radial-color-picker/color-wheel">
         <img src="https://img.shields.io/npm/l/@radial-color-picker/color-wheel.svg" alt="License">
     </a>
+    <a href="https://circleci.com/gh/radial-color-picker/color-wheel">
+        <img src="https://circleci.com/gh/radial-color-picker/color-wheel.svg?style=shield" alt="CircleCI">
+    </a>
 </p>
 
 Minimal, framework-agnostic companion plugin for managing the color wheel of the Radial Color Picker.
