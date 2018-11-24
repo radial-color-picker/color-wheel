@@ -21,8 +21,6 @@ $ yarn
 ```
 
 Then, you can run several commands:
-"test": "jest",
-"ci": "jest -i --ci -b"
 *   `yarn build` creates a `dist` folder with the production ready sources
 *   `yarn dev` is like `yarn build` but watches for file changes and rebuilds the sources on file change
 *   `yarn lint` checks code style and reformats the code
