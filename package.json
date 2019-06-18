@@ -1,6 +1,6 @@
 {
   "name": "@radial-color-picker/color-wheel",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Minimal, framework-agnostic companion plugin for managing the color wheel of the Radial Color Picker.",
   "main": "dist/color-wheel.cjs.js",
   "module": "dist/color-wheel.esm.js",
