@@ -2,7 +2,7 @@ import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
 
-const outputDir = 'dist/rotator';
+const outputDir = 'dist/color-wheel';
 
 const banner = `/**
  * radial-color-picker/color-wheel v${pkg.version}
