@@ -1,6 +1,8 @@
-import minify from 'rollup-plugin-babel-minify';
 import babel from 'rollup-plugin-babel';
+import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
+
+const outputDir = 'dist/rotator';
 
 const banner = `/**
  * radial-color-picker/color-wheel v${pkg.version}
@@ -14,31 +16,42 @@ const banner = `/**
 export default [
     {
         input: 'src/main.js',
-        output: { name: 'colorWheel', file: pkg.browser, format: 'umd', banner },
-        plugins: [
-            babel({
-                exclude: ['node_modules/**'],
-            }),
-        ],
+        output: {
+            name: 'colorWheel',
+            file: outputDir + '.umd.js',
+            format: 'umd',
+            banner,
+        },
+        plugins: [babel()],
     },
     {
         input: 'src/main.js',
-        output: { name: 'colorWheel', file: 'dist/color-wheel.umd.min.js', format: 'umd', banner },
+        output: {
+            name: 'colorWheel',
+            file: outputDir + '.umd.min.js',
+            format: 'umd',
+            banner,
+        },
         plugins: [
-            babel({
-                exclude: ['node_modules/**'],
-            }),
-            minify({
-                comments: false,
-                bannerNewLine: true,
+            babel(),
+            terser({
+                output: {
+                    comments(node, { value, type }) {
+                        if (type === 'comment2') {
+                            // multiline comment
+                            return value.includes('Copyright (c) 2018-present');
+                        }
+                    },
+                },
             }),
         ],
     },
     {
         input: 'src/main.js',
         output: [
-            { file: pkg.main, format: 'cjs', banner },
-            { file: pkg.module, format: 'es', banner },
+            { file: outputDir + '.cjs.js', format: 'cjs', banner },
+            { file: outputDir + '.esm.js', format: 'esm', banner },
         ],
+        plugins: [babel()],
     },
 ];

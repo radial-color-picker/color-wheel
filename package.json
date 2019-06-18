@@ -4,20 +4,9 @@
   "description": "Minimal, framework-agnostic companion plugin for managing the color wheel of the Radial Color Picker.",
   "main": "dist/color-wheel.cjs.js",
   "module": "dist/color-wheel.esm.js",
-  "browser": "dist/color-wheel.umd.js",
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "7.1.6",
-    "@babel/preset-env": "7.1.6",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "23.6.0",
-    "canvas": "2.1.0",
-    "jest": "23.6.0",
-    "prettier": "1.15.2",
-    "rollup": "0.67.3",
-    "rollup-plugin-babel": "4.0.3",
-    "rollup-plugin-babel-minify": "6.1.1"
-  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -26,9 +15,19 @@
     "ci": "jest -i --ci -b",
     "prepublishOnly": "rollup -c"
   },
-  "files": [
-    "dist"
-  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "24.8.0",
+    "canvas": "2.5.0",
+    "jest": "24.8.0",
+    "prettier": "1.18.2",
+    "rollup": "1.15.6",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-terser": "5.0.0"
+  },
   "repository": "git@github.com:radial-color-picker/color-wheel.git",
   "author": "Rosen Kanev <rkunev@gmail.com>",
   "license": "MIT"
