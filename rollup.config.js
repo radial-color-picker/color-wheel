@@ -49,7 +49,7 @@ export default [
     {
         input: 'src/main.js',
         output: [
-            { file: outputDir + '.cjs.js', format: 'cjs', banner },
+            { file: outputDir + '.cjs.js', format: 'cjs', banner, exports: 'default' },
             { file: outputDir + '.esm.js', format: 'esm', banner },
         ],
         plugins: [babel()],
